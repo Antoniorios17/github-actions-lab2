@@ -7,6 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, maxos14, windows-latest]
+    runs-on: {{ matrix.os}}
     steps:
     - name: Set up python
       uses: actions/setup-python@v5
